@@ -17,20 +17,20 @@ static_resources:
     - _*
 
 plugins:
-  - search 
+  - markdownmermaid:
+      init_options: 
+          - startOnLoad: true
+          - theme: "forest" 
+          - flowchart:
+              - curve: "cardinal"
+              - useMaxWidth: true
 
 extra_javascript:
-  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@8.4.5/dist/mermaid.min.js 
 
 markdown_extensions:
     - smarty
     - toc:
         permalink: True
     - sane_lists
-    - attr_list 
-    - pymdownx.superfences:
-      # make exceptions to highlighting of code:
-        custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:mermaid2.fence_mermaid
+    - attr_list  
