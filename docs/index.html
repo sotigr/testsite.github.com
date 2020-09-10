@@ -29,10 +29,6 @@
         
         var pageToc = [
           {title: "Intro", url: "#_top", children: [
-              {title: "Install", url: "#install" },
-              {title: "Setup", url: "#setup" },
-              {title: "Run", url: "#run" },
-              {title: "Build", url: "#build" },
           ]},
         ];
 
@@ -76,37 +72,13 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <ul class="wm-toctree">
 <li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="">Intro</a>
 </li>
-<li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="chart/">Chart</a>
-</li>
-<li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Admin</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-<ul class="wm-toctree">
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="Admin/">Welcome to MkDocs</a>
-</li>
-</ul>
-</li>
-<li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Client</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-<ul class="wm-toctree">
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="Client/">Index</a>
-</li>
-</ul>
+<li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="graph/">Graph</a>
 </li>
 <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">MkDIrs Config</span>
 </li>
 <li class="wm-toc-li-nested collapse">
 <ul class="wm-toctree">
 <li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="MkDIrs%20Config/Basic/">Basic</a>
-</li>
-</ul>
-</li>
-<li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Server</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-<ul class="wm-toctree">
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="Server/">Welcome to MkDocs</a>
 </li>
 </ul>
 </li>
@@ -120,81 +92,26 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <a name="_top"></a>
 <div aria-label="navigation" class="row wm-article-nav-buttons" role="navigation">
 <div class="wm-article-nav pull-right">
-<a class="btn btn-xs btn-default pull-right" href="chart/">
+<a class="btn btn-xs btn-default pull-right" href="graph/">
         Next
         <i aria-hidden="true" class="fa fa-chevron-right"></i>
 </a>
-<a class="btn btn-xs btn-link" href="chart/">
-        Chart
+<a class="btn btn-xs btn-link" href="graph/">
+        Graph
       </a>
 </div>
 </div>
 <h1 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">¶</a></h1>
-<p>This documentation covers the three brive projects Admin, Server and Client, and its own basic setup and deployment methodologies.</p>
-<p>Select a project from the sidebar of search for a specific feature.</p>
-<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">¶</a></h2>
-<p>Clone the git repo:</p>
-<div class="highlight"><pre><span></span><code>git clone https://gitlab.com/sotig/studyplan.git
-</code></pre></div>
-<p>The master branch is not the latest. Make sure to checkout the branch you need.</p>
-<div class="highlight"><pre><span></span><code>git checkout desired_branch
-</code></pre></div>
-<p>For these project you will need Node js with npm and python3 with pip3</p>
-<ul>
-<li><a href="https://nodejs.org/en/download/">Install node</a></li>
-</ul>
-<p>If you run ubuntu all you have to do is install python-pip</p>
-<div class="highlight"><pre><span></span><code>sudo apt install pytho3-pip
-</code></pre></div>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">¶</a></h2>
-<p>Cd into the project directory</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> studyplan
-</code></pre></div>
-<h3 id="client">Client<a class="headerlink" href="#client" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> client
-npm i
-</code></pre></div>
-<h3 id="server">Server<a class="headerlink" href="#server" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> server
-npm i
-</code></pre></div>
-<h3 id="admin">Admin<a class="headerlink" href="#admin" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> admin
-pip3 install -r requirements.txt
-</code></pre></div>
-<h2 id="run">Run<a class="headerlink" href="#run" title="Permanent link">¶</a></h2>
-<h3 id="client_1">Client<a class="headerlink" href="#client_1" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> client
-npm run dev
-</code></pre></div>
-<h3 id="server_1">Server<a class="headerlink" href="#server_1" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> server
-npm run dev
-</code></pre></div>
-<h3 id="admin_1">Admin<a class="headerlink" href="#admin_1" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> admin
-python3 manage.py runserver
-</code></pre></div>
-<h2 id="build">Build<a class="headerlink" href="#build" title="Permanent link">¶</a></h2>
-<p>All three projects can be deployed with <code>docker-compose</code>
-<code>docker-compose</code> configuration can be found in the <code>docker-compose.yml</code> file located in the root directory of the project.</p>
-<p>To build and run the project using docker-compose run:</p>
-<div class="highlight"><pre><span></span><code>docker-compose up
-<span class="c1"># or detached</span>
-docker-compose up -d
-</code></pre></div>
-<p>To build or rebuild the images run:</p>
-<div class="highlight"><pre><span></span><code>docker-compose build
-</code></pre></div>
+<p>Test site</p>
 <br/>
 <div aria-label="navigation" class="row wm-article-nav-buttons" role="navigation">
 <div class="wm-article-nav pull-right">
-<a class="btn btn-xs btn-default pull-right" href="chart/">
+<a class="btn btn-xs btn-default pull-right" href="graph/">
         Next
         <i aria-hidden="true" class="fa fa-chevron-right"></i>
 </a>
-<a class="btn btn-xs btn-link" href="chart/">
-        Chart
+<a class="btn btn-xs btn-link" href="graph/">
+        Graph
       </a>
 </div>
 </div>
@@ -207,5 +124,5 @@ docker-compose up -d
 </html>
 <!--
 MkDocs version : 1.1
-Build Date UTC : 2020-09-10 09:02:48
+Build Date UTC : 2020-09-10 09:16:38
 -->

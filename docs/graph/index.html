@@ -7,7 +7,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../img/favicon.ico" rel="shortcut icon"/>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-<title>Welcome to MkDocs - Brive Docs</title>
+<title>Graph - Brive Docs</title>
 <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet"/>
 <link href="../css/font-awesome-4.7.0.css" rel="stylesheet"/>
 <link href="../css/base.css" rel="stylesheet"/>
@@ -26,8 +26,6 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "Welcome to MkDocs", url: "#_top", children: [
-          ]},
         ];
 
     </script>
@@ -42,39 +40,46 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <a name="_top"></a>
 <div aria-label="navigation" class="row wm-article-nav-buttons" role="navigation">
 <div class="wm-article-nav pull-right">
-<a class="btn btn-xs btn-default pull-right" href="../Client/">
+<a class="btn btn-xs btn-default pull-right" href="../MkDIrs%20Config/Basic/">
         Next
         <i aria-hidden="true" class="fa fa-chevron-right"></i>
 </a>
-<a class="btn btn-xs btn-link" href="../Client/">
-        Index
+<a class="btn btn-xs btn-link" href="../MkDIrs%20Config/Basic/">
+        Basic
       </a>
 </div>
 <div class="wm-article-nav">
-<a class="btn btn-xs btn-default pull-left" href="../chart/">
+<a class="btn btn-xs btn-default pull-left" href="..">
 <i aria-hidden="true" class="fa fa-chevron-left"></i>
-        Previous</a><a class="btn btn-xs btn-link" href="../chart/">
-        Chart
+        Previous</a><a class="btn btn-xs btn-link" href="..">
+        Intro
       </a>
 </div>
 </div>
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">¶</a></h1>
+<div class="mermaid">graph TD; 
+    Questionair_Renderer--&gt;inData--&gt;Question;
+    Questionair_Renderer--&gt;questionnaireInstance--&gt;Question;
+    Questionair_Renderer--&gt;onSaveData--&gt;Question;  
+    Question--&gt;isValid--&gt;has_onSaveData--&gt;Questionair_Renderer;
+    Questionair_Renderer--&gt;Paginator;
+    Question--&gt;Paginator;
+</div>
 <br/>
 <div aria-label="navigation" class="row wm-article-nav-buttons" role="navigation">
 <div class="wm-article-nav pull-right">
-<a class="btn btn-xs btn-default pull-right" href="../Client/">
+<a class="btn btn-xs btn-default pull-right" href="../MkDIrs%20Config/Basic/">
         Next
         <i aria-hidden="true" class="fa fa-chevron-right"></i>
 </a>
-<a class="btn btn-xs btn-link" href="../Client/">
-        Index
+<a class="btn btn-xs btn-link" href="../MkDIrs%20Config/Basic/">
+        Basic
       </a>
 </div>
 <div class="wm-article-nav">
-<a class="btn btn-xs btn-default pull-left" href="../chart/">
+<a class="btn btn-xs btn-default pull-left" href="..">
 <i aria-hidden="true" class="fa fa-chevron-left"></i>
-        Previous</a><a class="btn btn-xs btn-link" href="../chart/">
-        Chart
+        Previous</a><a class="btn btn-xs btn-link" href="..">
+        Intro
       </a>
 </div>
 </div>
@@ -83,5 +88,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <footer class="container-fluid wm-page-content">
 <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
-</body>
+&lt;script&gt;
+ mermaid.initialize({});
+&lt;/script&gt;</body>
 </html>

@@ -18,11 +18,8 @@ static_resources:
 
 plugins:
   - search
-  - mermaid2:
-      arguments:
-        theme: 'dark'
-        securityLevel: 'loose'
-
+  - mermaid2
+  
 extra_javascript:
   - https://unpkg.com/mermaid/dist/mermaid.min.js
 
