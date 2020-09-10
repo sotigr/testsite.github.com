@@ -58,9 +58,9 @@ To make images available under `http://example.com/Img` paste them in the `docs/
 ###Example MD image:
 
 ```md
-![Brive logo](/img/icon.png){: style="height:150px;width:150px"}
+![Brive logo](img/icon.png){: style="height:150px;width:150px"}
 ```
 
 ###Result:
 
-![Brive logo](/img/icon.png){: style="height:150px;width:150px"}
+![Brive logo](img/icon.png){: style="height:150px;width:150px"}
