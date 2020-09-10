@@ -1,6 +1,6 @@
 mkdocs==1.1
 mkdocs-windmill
-mkdocs-mermaid2-plugin 
+mkdocs-mermaid-plugin 
 mkdocs-material
 tornado==5.0 
 markdown-include 

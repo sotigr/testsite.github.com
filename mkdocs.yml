@@ -17,9 +17,8 @@ static_resources:
     - _*
 
 plugins:
-  - search
-  - mermaid2
-  
+  - search 
+
 extra_javascript:
   - https://unpkg.com/mermaid/dist/mermaid.min.js
 
