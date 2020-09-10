@@ -1,0 +1,37 @@
+site_name: "Brive Docs"
+
+theme: windmill 
+
+extra:
+  logo: "img/icon.png"
+  version: v4
+
+static_resources:
+  - include: 
+    - images/*.png
+    - images/*.jpg
+  - exclude:
+    - _*
+
+plugins:
+  - search
+  - mermaid2:
+      arguments:
+        theme: 'dark'
+        securityLevel: 'loose'
+
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+markdown_extensions:
+    - smarty
+    - toc:
+        permalink: True
+    - sane_lists
+    - attr_list 
+    - pymdownx.superfences:
+      # make exceptions to highlighting of code:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:mermaid2.fence_mermaid

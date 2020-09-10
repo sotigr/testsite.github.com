@@ -1,0 +1,8 @@
+version: '3.3'
+services: 
+  docs-big-form:
+    container_name: docs-big-form
+    restart: always
+    build: ./
+    ports:
+      - '4040:80' 
