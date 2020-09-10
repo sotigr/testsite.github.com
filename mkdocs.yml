@@ -2,6 +2,9 @@ site_name: "Brive Docs"
 
 theme: windmill 
 
+docs_dir: src
+site_dir: docs
+
 extra:
   logo: "img/icon.png"
   version: v4
