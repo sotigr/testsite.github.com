@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="None" name="description"/>
-<link href="./img/favicon.ico" rel="shortcut icon"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-<title>Brive Docs</title>
-<link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet"/>
-<link href="./css/font-awesome-4.7.0.css" rel="stylesheet"/>
-<link href="./css/base.css" rel="stylesheet"/>
-<link href="./css/highlight.css" rel="stylesheet"/>
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    
+    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Brive Docs</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-<script src="./js/jquery-3.2.1.min.js"></script>
-<script src="./js/bootstrap-3.3.7.min.js"></script>
-<script src="./js/highlight.pack.js"></script>
-<script src="./js/elasticlunr.min.js"></script>
-<base target="_top"/>
-<script>
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
       var base_url = '.';
       var is_top_frame = (window === window.parent);
         
@@ -33,96 +39,145 @@
         ];
 
     </script>
-<script src="./js/base.js"></script>
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-</meta></head>
+    <script src="./js/base.js"></script>
+      <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script> 
+</head>
+
 <body>
 <script>
 if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </script>
+
 <nav class="navbar wm-page-top-frame">
-<div class="container-fluid wm-top-container">
-<div class="wm-top-tool pull-right wm-vcenter">
-<form action="./search.html" class="dropdown wm-vcentered" id="wm-search-form">
-<button class="btn btn-sm btn-default" id="wm-search-show" type="submit"><i aria-hidden="true" class="fa fa-search"></i></button>
-<div class="input-group input-group-sm wm-top-search">
-<input autocomplete="off" class="form-control" id="mkdocs-search-query" name="q" placeholder="Search" type="text"/>
-<span class="input-group-btn" role="search">
-<button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
-<ul class="dropdown-menu dropdown-menu-right" id="mkdocs-search-results"></ul>
-<button class="btn btn-default" id="wm-search-go" type="submit"><i aria-hidden="true" class="fa fa-search"></i></button>
-</span>
-</div>
-</form>
-</div>
-<div class="wm-top-tool wm-vcenter pull-right wm-small-left">
-<button class="btn btn-sm btn-default wm-vcentered" id="wm-toc-button" type="button"><i aria-hidden="true" class="fa fa-th-list"></i></button>
-</div>
-<a class="wm-top-brand wm-top-link wm-vcenter" href="">
-<img class="wm-top-logo" src="./img/icon.png"/>
-<div class="wm-top-title">
-        Brive Docs<br/>
-<span class="wm-top-version">v4</span>
-</div>
-</a>
-</div>
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+        <img class="wm-top-logo" src="./img/icon.png"/>
+      
+      <div class="wm-top-title">
+        Brive Docs<br>
+        
+          <span class="wm-top-version">v4</span>
+        
+      </div>
+    </a>
+  </div>
 </nav>
-<div class="wm-page-top-frame" id="main-content">
+
+  <div id="main-content" class="wm-page-top-frame">
+    
 <nav class="wm-toc-pane">
-<ul class="wm-toctree">
-<li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="">Intro</a>
+  
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Intro</a>
 </li>
-<li class="wm-toc-li wm-toc-lev1"><a class="wm-article-link wm-toc-text" href="graph/">Graph</a>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="graph/" class="wm-article-link wm-toc-text">Graph</a>
 </li>
-<li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">MkDIrs Config</span>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">MkDIrs Config</span>
 </li>
 <li class="wm-toc-li-nested collapse">
-<ul class="wm-toctree">
-<li class="wm-toc-li wm-toc-lev2"><a class="wm-article-link wm-toc-text" href="MkDIrs%20Config/Basic/">Basic</a>
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="MkDIrs%20Config/Basic/" class="wm-article-link wm-toc-text">Basic</a>
 </li>
-</ul>
+  </ul>
 </li>
-</ul>
+
+  </ul>
 </nav>
-<div class="wm-content-pane">
-<iframe class="wm-article" name="article"></iframe>
-</div>
-</div>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
 <div class="container-fluid wm-page-content">
-<a name="_top"></a>
-<div aria-label="navigation" class="row wm-article-nav-buttons" role="navigation">
-<div class="wm-article-nav pull-right">
-<a class="btn btn-xs btn-default pull-right" href="graph/">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="graph/" class="btn btn-xs btn-default pull-right">
         Next
-        <i aria-hidden="true" class="fa fa-chevron-right"></i>
-</a>
-<a class="btn btn-xs btn-link" href="graph/">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="graph/" class="btn btn-xs btn-link">
         Graph
       </a>
-</div>
-</div>
-<h1 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">¶</a></h1>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h1>
 <p>Test site</p>
-<br/>
-<div aria-label="navigation" class="row wm-article-nav-buttons" role="navigation">
-<div class="wm-article-nav pull-right">
-<a class="btn btn-xs btn-default pull-right" href="graph/">
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="graph/" class="btn btn-xs btn-default pull-right">
         Next
-        <i aria-hidden="true" class="fa fa-chevron-right"></i>
-</a>
-<a class="btn btn-xs btn-link" href="graph/">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="graph/" class="btn btn-xs btn-link">
         Graph
       </a>
+    </div>
+    
+  </div>
+
+    <br>
 </div>
-</div>
-<br/>
-</div>
+
 <footer class="container-fluid wm-page-content">
-<p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
+
 </body>
 </html>
 <!--
 MkDocs version : 1.1
-Build Date UTC : 2020-09-10 09:16:38
+Build Date UTC : 2020-09-10 09:32:05
 -->

@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="../../img/favicon.ico" rel="shortcut icon"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-<title>Basic - Brive Docs</title>
-<link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet"/>
-<link href="../../css/font-awesome-4.7.0.css" rel="stylesheet"/>
-<link href="../../css/base.css" rel="stylesheet"/>
-<link href="../../css/highlight.css" rel="stylesheet"/>
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Basic - Brive Docs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-<script src="../../js/jquery-3.2.1.min.js"></script>
-<script src="../../js/bootstrap-3.3.7.min.js"></script>
-<script src="../../js/highlight.pack.js"></script>
-<base target="_top"/>
-<script>
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
       var base_url = '../..';
       var is_top_frame = false;
         
@@ -41,68 +47,102 @@
         ];
 
     </script>
-<script src="../../js/base.js"></script>
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-</meta></head>
+    <script src="../../js/base.js"></script>
+      <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script> 
+</head>
+
 <body>
 <script>
 if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </script>
+
+
+
 <div class="container-fluid wm-page-content">
-<a name="_top"></a>
-<div aria-label="navigation" class="row wm-article-nav-buttons" role="navigation">
-<div class="wm-article-nav">
-<a class="btn btn-xs btn-default pull-left" href="../../graph/">
-<i aria-hidden="true" class="fa fa-chevron-left"></i>
-        Previous</a><a class="btn btn-xs btn-link" href="../../graph/">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../../graph/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../graph/" class="btn btn-xs btn-link">
         Graph
       </a>
-</div>
-</div>
-<h2 id="mkdocs-configuration">MkDocs Configuration<a class="headerlink" href="#mkdocs-configuration" title="Permanent link">¶</a></h2>
+    </div>
+    
+  </div>
+
+    
+
+    <h2 id="mkdocs-configuration">MkDocs Configuration<a class="headerlink" href="#mkdocs-configuration" title="Permanent link">&para;</a></h2>
 <p>This site is powered by a markdown documentation site generator called MkDocs you can find more about MkDocs <a href="https://www.mkdocs.org/">here</a></p>
 <p>MkDocs is fitted with a custom theme called windmill, docs about it can be found <a href="https://github.com/gristlabs/mkdocs-windmill">here</a></p>
-<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">¶</a></h2>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
 <p>Begin by making sure you have python3 and pip3 installed. Now you have to install the necessary dependencies.</p>
 <p>Install MkDocs</p>
 <div class="highlight"><pre><span></span><code>pip3 install mkdocs
 sudo apt install mkdocs
 </code></pre></div>
+
 <p>Install MkDocs Windmill</p>
 <div class="highlight"><pre><span></span><code>pip3 install mkdocs-windmill
 </code></pre></div>
-<h2 id="build-and-run">Build and Run<a class="headerlink" href="#build-and-run" title="Permanent link">¶</a></h2>
+
+<h2 id="build-and-run">Build and Run<a class="headerlink" href="#build-and-run" title="Permanent link">&para;</a></h2>
 <p>After installing all the dependencies, you can run the following command to start a local server previewing the documentation.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> project_location
 mkdocs serve
 </code></pre></div>
+
 <p>To build the project run:</p>
 <div class="highlight"><pre><span></span><code>mkdocs build
 </code></pre></div>
+
 <p>Now the documents in the <code>site</code> directory are updated and ready to push to production.</p>
-<h2 id="static-and-extra-configuration">Static and extra configuration<a class="headerlink" href="#static-and-extra-configuration" title="Permanent link">¶</a></h2>
+<h2 id="static-and-extra-configuration">Static and extra configuration<a class="headerlink" href="#static-and-extra-configuration" title="Permanent link">&para;</a></h2>
 <p>In the root directory of the project there is a file called <code>mkdocs.yml</code>. This file contains configuration regarding static files, themes and <a href="https://www.mkdocs.org/user-guide/configuration/">more</a></p>
 <p>To make images available under <code>http://example.com/Img</code> paste them in the <code>docs/img/</code> folder.</p>
-<h2 id="linking-images">Linking images<a class="headerlink" href="#linking-images" title="Permanent link">¶</a></h2>
-<h3 id="example-md-image">Example MD image:<a class="headerlink" href="#example-md-image" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code>![<span class="nt">Brive logo</span>](<span class="na">/img/icon.png</span>){: style="height:150px;width:150px"}
+<h2 id="linking-images">Linking images<a class="headerlink" href="#linking-images" title="Permanent link">&para;</a></h2>
+<h3 id="example-md-image">Example MD image:<a class="headerlink" href="#example-md-image" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>![<span class="nt">Brive logo</span>](<span class="na">/img/icon.png</span>){: style=&quot;height:150px;width:150px&quot;}
 </code></pre></div>
-<h3 id="result">Result:<a class="headerlink" href="#result" title="Permanent link">¶</a></h3>
-<p><img alt="Brive logo" src="/img/icon.png" style="height:150px;width:150px"/></p>
-<br/>
-<div aria-label="navigation" class="row wm-article-nav-buttons" role="navigation">
-<div class="wm-article-nav">
-<a class="btn btn-xs btn-default pull-left" href="../../graph/">
-<i aria-hidden="true" class="fa fa-chevron-left"></i>
-        Previous</a><a class="btn btn-xs btn-link" href="../../graph/">
+
+<h3 id="result">Result:<a class="headerlink" href="#result" title="Permanent link">&para;</a></h3>
+<p><img alt="Brive logo" src="/img/icon.png" style="height:150px;width:150px" /></p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../../graph/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../graph/" class="btn btn-xs btn-link">
         Graph
       </a>
+    </div>
+    
+  </div>
+
+    <br>
 </div>
-</div>
-<br/>
-</div>
+
 <footer class="container-fluid wm-page-content">
-<p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
+
 </body>
 </html>
